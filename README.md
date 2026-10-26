@@ -4,7 +4,7 @@ An offline Windows app for weapon camos, prestige, DMZ inventory, crafting, key 
 
 ## Download
 
-Download **MW4-Mastery-Tracker-Setup-1.1.1.exe** from [Releases](https://github.com/thenotsoquietninja44-collab/mw4-mastery-tracker/releases/latest), run the installer, and start MW4 Mastery Tracker. Windows 10/11, 64-bit.
+Download **MW4-Mastery-Tracker-Setup-1.1.2.exe** from [Releases](https://github.com/thenotsoquietninja44-collab/mw4-mastery-tracker/releases/latest), run the installer, and start MW4 Mastery Tracker. Windows 10/11, 64-bit.
 
 The installer contains the app and its images. Internet is optional: startup checks GitHub Releases for a newer version, but tracking and the map work offline. Available updates download in the background and ask before restarting. Your saved progress stays on your PC across updates.
 
@@ -45,3 +45,7 @@ Open Map → Draw & mark to place colored pins or any item icon, add notes, and 
 Before installing an in-app update, the app saves and verifies a dated progress backup on this PC. If the backup fails, the update pauses. A snapshot is also saved when an update finishes downloading. Backups include inventory, weapon progress, crafting, and shared map notes.
 
 Use Help → Restore from backup to select an automatic or exported JSON backup. Your current progress is backed up before restoring, and the app updates immediately. Help also includes Create progress backup and Open backups folder. Backups stay in the app’s progress-backups folder across updates and are never automatically deleted.
+
+## Weapon camo previews
+
+The main weapon list shows each gun over its furthest completed camo, with the camo name below. Checking or clearing camo progress updates the preview automatically. Weapons without a completed camo use a plain background. Existing progress and backup formats stay compatible.

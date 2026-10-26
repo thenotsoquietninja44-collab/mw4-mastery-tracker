@@ -1,0 +1,37 @@
+name: Build Windows release
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: Expand-Archive -LiteralPath app-source.zip -DestinationPath . -Force
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: node scripts/unpack-ui.cjs
+      - run: Expand-Archive -LiteralPath .build/ui.zip -DestinationPath . -Force
+      - run: npm test
+      - run: npm run build:win
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-installer
+          path: release/*
+      - uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/v')
+        with:
+          draft: false
+          generate_release_notes: true
+          files: |
+            release/*.exe
+            release/*.blockmap
+            release/latest.yml

@@ -18,6 +18,7 @@ jobs:
       - run: npm ci
       - run: node scripts/unpack-ui.cjs
       - run: Expand-Archive -LiteralPath .build/ui.zip -DestinationPath . -Force
+      - run: Expand-Archive -LiteralPath ui-update.zip -DestinationPath . -Force
       - run: npm test
       - run: npm run build:win
         env:

@@ -1,0 +1,12 @@
+{
+  "parts": [
+    "ui-assets.part001",
+    "ui-assets.part002",
+    "ui-assets.part003",
+    "ui-assets.part004",
+    "ui-assets.part005",
+    "ui-assets.part006",
+    "ui-assets.part007"
+  ],
+  "sha256": "cd69fc932c1d9cbee85a0a521695d320af78487a2ad8bb72a6588f65b49ab32e"
+}

@@ -1,0 +1,62 @@
+{
+  "name": "mw4-mastery-tracker",
+  "productName": "MW4 Mastery Tracker",
+  "version": "1.0.0",
+  "description": "Offline Windows progression tracker for MW4 and DMZ",
+  "author": "thenotsoquietninja44-collab",
+  "private": true,
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test test/*.test.cjs",
+    "prepare-ui": "node scripts/prepare-ui.cjs",
+    "build:win": "electron-builder --win nsis --x64 --publish never"
+  },
+  "dependencies": {
+    "electron-updater": "6.8.11"
+  },
+  "devDependencies": {
+    "electron": "45.0.0",
+    "electron-builder": "26.18.0"
+  },
+  "build": {
+    "appId": "com.ninja.mw4masterytracker",
+    "productName": "MW4 Mastery Tracker",
+    "artifactName": "MW4-Mastery-Tracker-Setup-${version}.${ext}",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "desktop/**/*",
+      "ui/**/*",
+      "package.json"
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "signExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "deleteAppDataOnUninstall": false
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "thenotsoquietninja44-collab",
+        "repo": "mw4-mastery-tracker",
+        "releaseType": "release"
+      }
+    ]
+  }
+}

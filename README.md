@@ -10,6 +10,16 @@ The installer contains the app and its images. Internet is optional: startup che
 
 The initial installer is unsigned. Windows may show an unrecognized publisher warning.
 
+## Screenshots
+
+Click a screenshot to view it at full size. Screenshots show example saved progress; new users start with a blank tracker.
+
+| Weapon camos & prestige | Interactive Hajin map |
+| --- | --- |
+| [![Weapon list with earned camo backdrops, completion percentages and prestige milestones](screenshot-weapons.png)](screenshot-weapons.png) | [![Interactive Hajin map with location labels, icon filters and loot map sharing controls](screenshot-map.png)](screenshot-map.png) |
+| **Crafting & recipe unlocks** | **Items, keys & inventory** |
+| [![Crafting recipes with unlock status, rarity and required materials](screenshot-crafting.png)](screenshot-crafting.png) | [![Inventory quantities, rarity filters and material location information](screenshot-items.png)](screenshot-items.png) |
+
 ## Bring your existing progress
 
 In your old HTML tracker, choose **Export backup**. Open the installed app and choose **Import backup** to bring it over. Other users start with blank progress. Export regularly for backups.

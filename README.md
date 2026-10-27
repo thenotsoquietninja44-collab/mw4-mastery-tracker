@@ -63,7 +63,7 @@ Open **DMZ → Interactive map → Draw & mark** to add pins, item icons, notes,
 
 - **Export loot map** creates a file you can share with your squad.
 - **Import loot map** merges markers and drawings while skipping duplicates.
-- **Show map locations** on an inventory item finds markers using that item's icon. Markers also link back to the item.
+- **Show map locations** on an inventory item shows matching saved pins, built-in key locations, and mapped search areas from the material guide. The count shows which kinds of locations are available. Search-area pins are broad leads, not exact or guaranteed loot spawns. Markers also link back to the item.
 
 Map-sharing files contain map notes only. Your inventory and progression stay separate. Full progress backups include your map notes too.
 

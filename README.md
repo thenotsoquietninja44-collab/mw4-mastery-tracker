@@ -1,18 +1,45 @@
+<div align="center">
+
 # MW4 Mastery Tracker
 
-An offline Windows app for weapon camos, prestige, DMZ inventory, crafting, key guides, the Hajin map, and FOB upgrades.
+### Every weapon. Every camo. Your next objective.
 
-## Download
+Track the grind, plan your crafts, and build your next DMZ loot route—all in one offline Windows app.
 
-Download **MW4-Mastery-Tracker-Setup-1.1.2.exe** from [Releases](https://github.com/thenotsoquietninja44-collab/mw4-mastery-tracker/releases/latest), run the installer, and start MW4 Mastery Tracker. Windows 10/11, 64-bit.
+[![Latest release](https://img.shields.io/github/v/release/thenotsoquietninja44-collab/mw4-mastery-tracker?style=for-the-badge&color=c7f560&label=Download)](https://github.com/thenotsoquietninja44-collab/mw4-mastery-tracker/releases/latest)
+![Windows 10 and 11](https://img.shields.io/badge/Windows-10%20%2F%2011-0078d4?style=for-the-badge)
+![Offline ready](https://img.shields.io/badge/Offline-Ready-c7f560?style=for-the-badge)
 
-The installer contains the app and its images. Internet is optional: startup checks GitHub Releases for a newer version, but tracking and the map work offline. Available updates download in the background and ask before restarting. Your saved progress stays on your PC across updates.
+**[Download for Windows](https://github.com/thenotsoquietninja44-collab/mw4-mastery-tracker/releases/latest) · [See it in action](#screenshots) · [Back up your progress](#backups)**
 
-The initial installer is unsigned. Windows may show an unrecognized publisher warning.
+No account required. Your progress stays on your PC.
+
+</div>
+
+---
+
+## Make every run count
+
+- **See the grind at a glance.** Each weapon sits over its highest completed camo, with completion percentages and prestige milestones beside it.
+- **Keep camo progress connected.** Completing a later camo automatically ticks its prerequisites. Multiplayer and DMZ challenge routes share the same completion.
+- **Plan your next craft.** Check recipe unlocks, required materials, and a combined shopping list. Track weapon manuals, extracted blueprints, and FOB upgrades.
+- **Know what you have—and what you need.** Track item and key quantities, filter by rarity, and look up available material locations and key instructions.
+- **Build a loot map with your squad.** Explore Hajin, filter icons, draw routes, and place colored pins or item markers. Export your map notes and merge maps shared by friends.
+- **Keep your progress protected.** Automatic backups run before in-app updates install. Restore a saved backup directly from the Help menu.
+
+## Get started
+
+1. Open the **[latest release](https://github.com/thenotsoquietninja44-collab/mw4-mastery-tracker/releases/latest)** and download the `MW4-Mastery-Tracker-Setup-…exe` installer.
+2. Run the installer and open **MW4 Mastery Tracker**.
+3. Start with a blank tracker and mark the progress you've already earned. Changes save automatically.
+
+**Requires:** Windows 10 or 11, 64-bit. The installer includes the app's images and map, so tracking works offline. An internet connection lets the app check for updates.
+
+The installer is unsigned, so Windows may show an unrecognized publisher warning.
 
 ## Screenshots
 
-Click a screenshot to view it at full size. Screenshots show example saved progress; new users start with a blank tracker.
+Click any screenshot to open it at full size. These previews show example saved progress.
 
 | Weapon camos & prestige | Interactive Hajin map |
 | --- | --- |
@@ -20,13 +47,62 @@ Click a screenshot to view it at full size. Screenshots show example saved progr
 | **Crafting & recipe unlocks** | **Items, keys & inventory** |
 | [![Crafting recipes with unlock status, rarity and required materials](screenshot-crafting.png)](screenshot-crafting.png) | [![Inventory quantities, rarity filters and material location information](screenshot-items.png)](screenshot-items.png) |
 
-## Bring your existing progress
+## Your next deployment
 
-In your old HTML tracker, choose **Export backup**. Open the installed app and choose **Import backup** to bring it over. Other users start with blank progress. Export regularly for backups.
+### Pick a weapon. See what's next.
 
-## Build from source
+Open **Weapon camos** to see each gun's earned camo backdrop, completion percentage, extracted manuals, and prestige milestones. Open a gun to view its challenges. The backdrop follows the furthest completed weapon camo and updates when you change your progress.
 
-Install Node.js 24 LTS. In PowerShell in this repository:
+### Turn your stash into a plan.
+
+Use **DMZ → Items & keys** to track quantities and check available location information. **Crafting** brings recipes, unlock requirements, and materials together. Click a material to open its inventory entry, or hover over it for a location hint.
+
+### Share the route. Keep your own progress.
+
+Open **DMZ → Interactive map → Draw & mark** to add pins, item icons, notes, and drawn routes.
+
+- **Export loot map** creates a file you can share with your squad.
+- **Import loot map** merges markers and drawings while skipping duplicates.
+- **Show map locations** on an inventory item finds markers using that item's icon. Markers also link back to the item.
+
+Map-sharing files contain map notes only. Your inventory and progression stay separate. Full progress backups include your map notes too.
+
+## Backups
+
+Your progress saves automatically on this PC. For a separate copy, use:
+
+| Action | Where to find it |
+| --- | --- |
+| Save a dated backup on this PC | **Help → Create progress backup** |
+| Restore an automatic or exported backup | **Help → Restore from backup** |
+| Browse your saved backups | **Help → Open backups folder** |
+| Save a portable copy for another PC | **Export progress**, at the top of the app |
+| Load a portable copy | **Import progress**, at the top of the app |
+
+Before an in-app update installs, the app saves and verifies a dated backup. If it can't create that backup, installation pauses. A snapshot is also saved when an update finishes downloading.
+
+Restoring through **Help → Restore from backup** first saves your current progress, then loads the selected backup. Automatic backups remain on your PC across updates and are not automatically deleted. Keep an exported copy somewhere separate if you want protection against losing the PC or its drive.
+
+## Updates
+
+The app checks GitHub Releases at startup. Available updates download in the background and ask before restarting to install.
+
+To check manually, use **Help → Check for updates**. You can keep using the tracker offline when a check isn't available.
+
+## Good to know
+
+- This is a manual companion tracker. It doesn't read your game account or sync progress from the game.
+- Saves are local to this PC. Use a progress backup to transfer them to another device.
+- Location hints are search leads, not guaranteed loot drops. Boss markers show reported areas, not guaranteed spawns.
+
+---
+
+<details>
+<summary><strong>For developers: build and release</strong></summary>
+
+### Build from source
+
+Install Node.js 24 LTS. From the repository folder, run:
 
 ```powershell
 Expand-Archive -LiteralPath app-source.zip -DestinationPath . -Force
@@ -38,24 +114,16 @@ npm test
 npm run build:win
 ```
 
-The installer, update manifest (`latest.yml`), and blockmap are written to `release/`. Desktop source, tests and build scripts are in `app-source.zip`. UI source and local artwork are in the multipart `ui-assets` archive to keep each repository upload below 25 MB. Its SHA-256 is checked before extraction. After extraction, apply `ui-update.zip` for the current fixes; all UI HTML, CSS, and JavaScript is editable under `ui/`.
+The installer, `latest.yml` update manifest, and blockmap are written to `release/`.
 
-## Publish an update
+Desktop code, tests, and build scripts are stored in `app-source.zip`. The multipart `ui-assets` archive contains the base UI and local artwork; its SHA-256 is verified before extraction. Apply `ui-update.zip` afterward for the current UI changes. The extracted UI source is under `ui/`.
 
-Bump `version` in `package.json` and update the lockfile. Commit the new files, tag the commit `vX.Y.Z`, and push the tag. The Windows GitHub Actions workflow builds the installer and publishes its `.exe`, `.blockmap`, and `latest.yml` to a release. Publish all three together: installed apps check that release feed at startup.
+### Publish a release
 
-Keep `appId`, `productName`, and the `app://tracker` origin stable so upgrades keep existing progress. No account, game login, or tracking service is used.
+Update the version in `package.json` and `package-lock.json`. Refresh `app-source.zip` when desktop code, scripts, or tests change, and `ui-update.zip` when UI files change. Commit the updated files, then tag the commit `vX.Y.Z` and push the tag.
 
-## Share loot maps
+GitHub Actions builds the Windows installer and publishes its `.exe`, `.blockmap`, and `latest.yml` together. Installed apps use that release feed for updates.
 
-Open Map → Draw & mark to place colored pins or any item icon, add notes, and draw routes. Export loot map shares only your map notes. Import loot map merges notes without changing progress and skips duplicates. In Items & keys, Show map locations finds all matching item markers; markers link back to their item. Notes save automatically and travel with full progress backups.
+Keep `appId`, `productName`, the persistent tracker partition, and the `app://tracker` origin stable so future versions continue loading existing saves.
 
-## Automatic progress backups
-
-Before installing an in-app update, the app saves and verifies a dated progress backup on this PC. If the backup fails, the update pauses. A snapshot is also saved when an update finishes downloading. Backups include inventory, weapon progress, crafting, and shared map notes.
-
-Use Help → Restore from backup to select an automatic or exported JSON backup. Your current progress is backed up before restoring, and the app updates immediately. Help also includes Create progress backup and Open backups folder. Backups stay in the app’s progress-backups folder across updates and are never automatically deleted.
-
-## Weapon camo previews
-
-The main weapon list shows each gun over its furthest completed camo, with the camo name below. Checking or clearing camo progress updates the preview automatically. Weapons without a completed camo use a plain background. Existing progress and backup formats stay compatible.
+</details>

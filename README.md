@@ -24,7 +24,7 @@ No account required. Your progress stays on your PC.
 - **Keep camo progress connected.** Completing a later camo automatically ticks its prerequisites. Multiplayer and DMZ challenge routes share the same completion.
 - **Plan your next craft.** Check recipe unlocks, required materials, and a combined shopping list. Track weapon manuals, extracted blueprints, and FOB upgrades.
 - **Know what you have—and what you need.** Track item and key quantities, filter by rarity, and look up available material locations and key instructions.
-- **Build a loot map with your squad.** Explore Hajin, filter icons, draw routes, and place colored pins or item markers. Export your map notes and merge maps shared by friends.
+- **Build a loot map with your squad.** Explore Hajin with searchable layer filters, loot and boss presets, ingredient search areas, and personal marker color filters. Draw routes and place colored pins or item markers. Export your map notes and merge maps shared by friends.
 - **Keep your progress protected.** Automatic backups run before in-app updates install. Restore a saved backup directly from the Help menu.
 
 ## Get started
@@ -61,6 +61,7 @@ Use **DMZ → Items & keys** to track quantities and check available location in
 
 Open **DMZ → Interactive map → Draw & mark** to add pins, item icons, notes, and drawn routes.
 
+- **Map layers & filters** offers quick presets, individual icon layers, ingredient toggles, and custom marker colors. Ingredient search areas appear by default; shared locations are grouped into one clickable pin.
 - **Export loot map** creates a file you can share with your squad.
 - **Import loot map** merges markers and drawings while skipping duplicates.
 - **Show map locations** on an inventory item shows matching saved pins, built-in key locations, and mapped search areas from the material guide. The count shows which kinds of locations are available. Search-area pins are broad leads, not exact or guaranteed loot spawns. Markers also link back to the item.

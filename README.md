@@ -21,7 +21,7 @@ No account required. Your progress stays on your PC.
 ## Make every run count
 
 - **See the grind at a glance.** Each weapon sits over its highest completed camo, with completion percentages and prestige milestones beside it.
-- **Keep camo progress connected.** Completing a later camo automatically ticks its prerequisites. Multiplayer and DMZ challenge routes share the same completion.
+- **Keep camo progress connected.** Completing a later camo automatically ticks its prerequisites. Multiplayer and DMZ challenge routes share the same completion. The main total counts weapon camos and War Spoils; account-wide mastery camos have their own totals in the Mastery camos tab.
 - **Find your sight picture.** Track 520 reticles across 40 optics with images, named unlocks, ADS kill challenges, and automatic prerequisite completion.
 - **Plan your next craft.** Check recipe unlocks, required materials, and a combined shopping list. Track weapon manuals, extracted blueprints, and FOB upgrades.
 - **Know what you have—and what you need.** Track item and key quantities, filter by rarity, and look up available material locations and key instructions.

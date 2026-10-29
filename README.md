@@ -22,6 +22,7 @@ No account required. Your progress stays on your PC.
 
 - **See the grind at a glance.** Each weapon sits over its highest completed camo, with completion percentages and prestige milestones beside it.
 - **Keep camo progress connected.** Completing a later camo automatically ticks its prerequisites. Multiplayer and DMZ challenge routes share the same completion.
+- **Find your sight picture.** Track 520 reticles across 40 optics with images, named unlocks, ADS kill challenges, and automatic prerequisite completion.
 - **Plan your next craft.** Check recipe unlocks, required materials, and a combined shopping list. Track weapon manuals, extracted blueprints, and FOB upgrades.
 - **Know what you have—and what you need.** Track item and key quantities, filter by rarity, and look up available material locations and key instructions.
 - **Build a loot map with your squad.** Explore Hajin with searchable layer filters, loot and boss presets, ingredient search areas, and personal marker color filters. Draw routes and place colored pins or item markers. Export your map notes and merge maps shared by friends.
@@ -46,6 +47,10 @@ Click any screenshot to open it at full size. These previews show example saved 
 | [![Weapon list with earned camo backdrops, completion percentages and prestige milestones](screenshot-weapons.png)](screenshot-weapons.png) | [![Interactive Hajin map with location labels, icon filters and loot map sharing controls](screenshot-map.png)](screenshot-map.png) |
 | **Crafting & recipe unlocks** | **Items, keys & inventory** |
 | [![Crafting recipes with unlock status, rarity and required materials](screenshot-crafting.png)](screenshot-crafting.png) | [![Inventory quantities, rarity filters and material location information](screenshot-items.png)](screenshot-items.png) |
+
+### Reticle tracker
+
+[![Reticle images, named unlocks and ADS kill challenges](screenshot-reticles.png)](screenshot-reticles.png)
 
 ## Your next deployment
 

@@ -1,0 +1,27 @@
+{
+  "parts": [
+    "ui-update.part001",
+    "ui-update.part002",
+    "ui-update.part003",
+    "ui-update.part004",
+    "ui-update.part005",
+    "ui-update.part006",
+    "ui-update.part007",
+    "ui-update.part008",
+    "ui-update.part009",
+    "ui-update.part010",
+    "ui-update.part011",
+    "ui-update.part012",
+    "ui-update.part013",
+    "ui-update.part014",
+    "ui-update.part015",
+    "ui-update.part016",
+    "ui-update.part017",
+    "ui-update.part018",
+    "ui-update.part019",
+    "ui-update.part020",
+    "ui-update.part021",
+    "ui-update.part022"
+  ],
+  "sha256": "562a484d2a6b679c563b32f7e661de14e473fc3bb1470f1d6ded9ad2757362d2"
+}

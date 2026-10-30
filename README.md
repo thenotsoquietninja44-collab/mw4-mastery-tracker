@@ -20,6 +20,8 @@ No account required. Your progress stays on your PC.
 
 ## Make every run count
 
+- **Put a face to every unlock.** Browse 387 recovered calling cards with offline artwork, available animations, titles, and 362 known unlock requirements. Cards with no recovered text are omitted; existing completion stays linked to its original progress keys.
+
 - **See the grind at a glance.** Each weapon sits over its highest completed camo, with completion percentages and prestige milestones beside it.
 - **Keep camo progress connected.** Completing a later camo automatically ticks its prerequisites. Multiplayer and DMZ challenge routes share the same completion. The main total counts only weapon camos. Account-wide mastery camos and War Spoils have separate counts in the Mastery camos tab. The main total counts only weapon camos. Account-wide mastery camos and War Spoils have separate counts in the Mastery camos tab.
 - **Find your sight picture.** Track 520 reticles across 40 optics with images, named unlocks, ADS kill challenges, and automatic prerequisite completion.
@@ -123,11 +125,11 @@ npm run build:win
 
 The installer, `latest.yml` update manifest, and blockmap are written to `release/`.
 
-Desktop code, tests, and build scripts are stored in `app-source.zip`. The multipart `ui-assets` archive contains the base UI and local artwork; its SHA-256 is verified before extraction. Apply `ui-update.zip` afterward for the current UI changes. The extracted UI source is under `ui/`.
+Desktop code, tests, and build scripts are stored in `app-source.zip`. The multipart `ui-assets` archive contains the base UI and local artwork; its SHA-256 is verified before extraction. The `ui-update.part…` files contain the current UI and calling-card artwork; `unpack-ui.cjs` verifies their SHA-256 and reconstructs `ui-update.zip`. Apply that reconstructed archive afterward for the current UI changes. The extracted UI source is under `ui/`.
 
 ### Publish a release
 
-Update the version in `package.json` and `package-lock.json`. Refresh `app-source.zip` when desktop code, scripts, or tests change, and `ui-update.zip` when UI files change. Commit the updated files, then tag the commit `vX.Y.Z` and push the tag.
+Update the version in `package.json` and `package-lock.json`. Refresh `app-source.zip` when desktop code, scripts, or tests change, and the `ui-update` parts and checksum manifest when UI files change. Commit the updated files, then tag the commit `vX.Y.Z` and push the tag.
 
 GitHub Actions builds the Windows installer and publishes its `.exe`, `.blockmap`, and `latest.yml` together. Installed apps use that release feed for updates.
 

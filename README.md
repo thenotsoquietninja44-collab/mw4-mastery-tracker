@@ -20,7 +20,7 @@ No account required. Your progress stays on your PC.
 
 ## Make every run count
 
-- **Put a face to every unlock.** Browse 387 recovered calling cards with offline artwork, available animations, titles, and 362 known unlock requirements. Cards with no recovered text are omitted; existing completion stays linked to its original progress keys.
+- **Put a face to every unlock.** Browse a compact grid of 387 recovered calling cards; click any card for a large preview. Includes offline artwork, available animations, titles, and 362 known unlock requirements. Cards with no recovered text are omitted; existing completion stays linked to its original progress keys.
 
 - **See the grind at a glance.** Each weapon sits over its highest completed camo, with completion percentages and prestige milestones beside it.
 - **Keep camo progress connected.** Completing a later camo automatically ticks its prerequisites. Multiplayer and DMZ challenge routes share the same completion. The main total counts only weapon camos. Account-wide mastery camos and War Spoils have separate counts in the Mastery camos tab. The main total counts only weapon camos. Account-wide mastery camos and War Spoils have separate counts in the Mastery camos tab.
@@ -119,13 +119,14 @@ npm ci
 node scripts/unpack-ui.cjs
 Expand-Archive -LiteralPath .build/ui.zip -DestinationPath . -Force
 Expand-Archive -LiteralPath ui-update.zip -DestinationPath . -Force
+Expand-Archive -LiteralPath ui-layout.zip -DestinationPath . -Force
 npm test
 npm run build:win
 ```
 
 The installer, `latest.yml` update manifest, and blockmap are written to `release/`.
 
-Desktop code, tests, and build scripts are stored in `app-source.zip`. The multipart `ui-assets` archive contains the base UI and local artwork; its SHA-256 is verified before extraction. The `ui-update.part…` files contain the current UI and calling-card artwork; `unpack-ui.cjs` verifies their SHA-256 and reconstructs `ui-update.zip`. Apply that reconstructed archive afterward for the current UI changes. The extracted UI source is under `ui/`.
+Desktop code, tests, and build scripts are stored in `app-source.zip`. The multipart `ui-assets` archive contains the base UI and local artwork; its SHA-256 is verified before extraction. The `ui-update.part…` files contain the current UI and calling-card artwork; `unpack-ui.cjs` verifies their SHA-256 and reconstructs `ui-update.zip`. Apply that reconstructed archive afterward for the current UI changes. Apply `ui-layout.zip` last for the latest card layout and viewer. The extracted UI source is under `ui/`.
 
 ### Publish a release
 

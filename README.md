@@ -20,6 +20,8 @@ No account required. Your progress stays on your PC.
 
 ## Make every run count
 
+- **Recognize your next target.** Offline portraits for all 10 lieutenants and 3 commanders, plus images for all 6 story missions. Click an image for a larger preview. Includes Operation Fallen Ember and its objectives.
+
 - **Put a face to every unlock.** Browse a compact grid of 389 recovered calling cards; click any card for a large preview. Includes offline artwork, available animations, titles, and 379 known unlock requirements. Verified mastery sets link to their required challenges, including Prestige 1–7. Completing linked challenges updates their mastery progress. Cards with no recovered text are omitted; existing completion stays linked to its original progress keys.
 
 - **See the grind at a glance.** Each weapon sits over its highest completed camo, with completion percentages and prestige milestones beside it.

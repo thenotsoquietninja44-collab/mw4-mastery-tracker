@@ -20,7 +20,7 @@ No account required. Your progress stays on your PC.
 
 ## Make every run count
 
-- **Put a face to every unlock.** Browse a compact grid of 387 recovered calling cards; click any card for a large preview. Includes offline artwork, available animations, titles, and 362 known unlock requirements. Cards with no recovered text are omitted; existing completion stays linked to its original progress keys.
+- **Put a face to every unlock.** Browse a compact grid of 389 recovered calling cards; click any card for a large preview. Includes offline artwork, available animations, titles, and 379 known unlock requirements. Verified mastery sets link to their required challenges, including Prestige 1–7. Completing linked challenges updates their mastery progress. Cards with no recovered text are omitted; existing completion stays linked to its original progress keys.
 
 - **See the grind at a glance.** Each weapon sits over its highest completed camo, with completion percentages and prestige milestones beside it.
 - **Keep camo progress connected.** Completing a later camo automatically ticks its prerequisites. Multiplayer and DMZ challenge routes share the same completion. The main total counts only weapon camos. Account-wide mastery camos and War Spoils have separate counts in the Mastery camos tab. The main total counts only weapon camos. Account-wide mastery camos and War Spoils have separate counts in the Mastery camos tab.

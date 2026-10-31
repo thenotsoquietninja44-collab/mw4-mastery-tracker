@@ -20,6 +20,7 @@ jobs:
       - run: Expand-Archive -LiteralPath .build/ui.zip -DestinationPath . -Force
       - run: Expand-Archive -LiteralPath ui-update.zip -DestinationPath . -Force
       - run: Expand-Archive -LiteralPath ui-layout.zip -DestinationPath . -Force
+      - run: Expand-Archive -LiteralPath ui-latest.zip -DestinationPath . -Force
       - run: npm test
       - run: npm run build:win
         env:

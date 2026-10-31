@@ -20,6 +20,8 @@ No account required. Your progress stays on your PC.
 
 ## Make every run count
 
+- **Keep the route in your pocket.** Browse 62 offline visual guides for keys, story missions, DMZ orders and map routes. Includes 748 screenshots, short GIFs that play when you choose, search, guide-type filters and links from matching missions, items, crafting orders, bosses and map locations. Click a screenshot to enlarge it. Player names in the bottom-left panel are covered in every exported screenshot and GIF frame.
+
 - **Recognize your next target.** Offline portraits for all 10 lieutenants and 3 commanders, plus images for all 6 story missions. Click an image for a larger preview. Includes Operation Fallen Ember and its objectives.
 
 - **Put a face to every unlock.** Browse a compact grid of 389 recovered calling cards; click any card for a large preview. Includes offline artwork, available animations, titles, and 379 known unlock requirements. Verified mastery sets link to their required challenges, including Prestige 1–7. Completing linked challenges updates their mastery progress. Cards with no recovered text are omitted; existing completion stays linked to its original progress keys.
@@ -128,7 +130,7 @@ npm run build:win
 
 The installer, `latest.yml` update manifest, and blockmap are written to `release/`.
 
-Desktop code, tests, and build scripts are stored in `app-source.zip`. The multipart `ui-assets` archive contains the base UI and local artwork; its SHA-256 is verified before extraction. The `ui-update.part…` files contain the current UI and calling-card artwork; `unpack-ui.cjs` verifies their SHA-256 and reconstructs `ui-update.zip`. Apply that reconstructed archive afterward for the current UI changes. Apply `ui-layout.zip` last for the latest card layout and viewer. The extracted UI source is under `ui/`.
+Desktop code, tests, and build scripts are stored in `app-source.zip`. The multipart `ui-assets` archive contains the base UI and local artwork; its SHA-256 is verified before extraction. The `ui-update.part…` files contain the current UI and calling-card artwork; `unpack-ui.cjs` verifies their SHA-256 and reconstructs `ui-update.zip`. Apply that reconstructed archive afterward for the current UI changes. The `ui-layout.part…` files contain the latest UI and offline visual guides; `unpack-ui.cjs` checks their checksum and reconstructs `ui-layout.zip`. Apply it last. The extracted UI source is under `ui/`.
 
 ### Publish a release
 

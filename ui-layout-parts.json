@@ -1,0 +1,15 @@
+{
+  "parts": [
+    "ui-layout.part001",
+    "ui-layout.part002",
+    "ui-layout.part003",
+    "ui-layout.part004",
+    "ui-layout.part005",
+    "ui-layout.part006",
+    "ui-layout.part007",
+    "ui-layout.part008",
+    "ui-layout.part009"
+  ],
+  "sha256": "ff6e0ad1a95ee602e8918c58262033edb0db7d83843868e11fd3d7d83787965b",
+  "size": 172714945
+}

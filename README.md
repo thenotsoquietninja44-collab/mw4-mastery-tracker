@@ -20,6 +20,8 @@ No account required. Your progress stays on your PC.
 
 ## Make every run count
 
+- **Put your next stop first.** Choose Arrange menu under DMZ to drag sections into your preferred order, or use the up/down arrows. Your layout saves automatically, travels with progress backups, and can be reset to the default order.
+
 - **Keep the route in your pocket.** Browse 62 offline visual guides for keys, story missions, DMZ orders and map routes. Includes 748 screenshots, short GIFs that play when you choose, search, guide-type filters and links from matching missions, items, crafting orders, bosses and map locations. Click a screenshot to enlarge it. Player names in the bottom-left panel are covered in every exported screenshot and GIF frame.
 
 - **Recognize your next target.** Offline portraits for all 10 lieutenants and 3 commanders, plus images for all 6 story missions. Click an image for a larger preview. Includes Operation Fallen Ember and its objectives.
@@ -124,13 +126,14 @@ node scripts/unpack-ui.cjs
 Expand-Archive -LiteralPath .build/ui.zip -DestinationPath . -Force
 Expand-Archive -LiteralPath ui-update.zip -DestinationPath . -Force
 Expand-Archive -LiteralPath ui-layout.zip -DestinationPath . -Force
+Expand-Archive -LiteralPath ui-latest.zip -DestinationPath . -Force
 npm test
 npm run build:win
 ```
 
 The installer, `latest.yml` update manifest, and blockmap are written to `release/`.
 
-Desktop code, tests, and build scripts are stored in `app-source.zip`. The multipart `ui-assets` archive contains the base UI and local artwork; its SHA-256 is verified before extraction. The `ui-update.part…` files contain the current UI and calling-card artwork; `unpack-ui.cjs` verifies their SHA-256 and reconstructs `ui-update.zip`. Apply that reconstructed archive afterward for the current UI changes. The `ui-layout.part…` files contain the latest UI and offline visual guides; `unpack-ui.cjs` checks their checksum and reconstructs `ui-layout.zip`. Apply it last. The extracted UI source is under `ui/`.
+Desktop code, tests, and build scripts are stored in `app-source.zip`. The multipart `ui-assets` archive contains the base UI and local artwork; its SHA-256 is verified before extraction. The `ui-update.part…` files contain the current UI and calling-card artwork; `unpack-ui.cjs` verifies their SHA-256 and reconstructs `ui-update.zip`. Apply that reconstructed archive afterward for the current UI changes. The `ui-layout.part…` files contain the latest UI and offline visual guides; `unpack-ui.cjs` checks their checksum and reconstructs `ui-layout.zip`. Apply it after the base archives, then apply `ui-latest.zip` for the latest interface changes. The extracted UI source is under `ui/`.
 
 ### Publish a release
 

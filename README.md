@@ -32,7 +32,7 @@ No account required. Your progress stays on your PC.
 - **Keep camo progress connected.** Completing a later camo automatically ticks its prerequisites. Multiplayer and DMZ challenge routes share the same completion. The main total counts only weapon camos. Account-wide mastery camos and War Spoils have separate counts in the Mastery camos tab.
 - **Find your sight picture.** Track 520 reticles across 40 optics with images, named unlocks, ADS kill challenges, and automatic prerequisite completion.
 - **Track War Spoils separately.** Open Mastery camos for a dedicated 33-weapon section, its own completion count, and linked weapon-manual controls.
-- **Plan your next craft.** Check recipe unlocks, required materials, and a combined shopping list. Track weapon manuals, extracted blueprints, and FOB upgrades.
+- **Plan your next craft.** Browse 95 recipe material lists verified against the in-game crafting menus on 3 November 2026. Check unlocks, required amounts per item, and a combined shopping list. Track weapon manuals, extracted blueprints, and FOB upgrades.
 - **Know what you have—and what you need.** Track item and key quantities, filter by rarity, and look up available material locations and key instructions.
 - **Build a loot map with your squad.** Explore Hajin with searchable layer filters, loot and boss presets, ingredient search areas, and personal marker color filters. Draw routes and place colored pins or item markers. Export your map notes and merge maps shared by friends.
 - **Keep your progress protected.** Automatic backups run before in-app updates install. Restore a saved backup directly from the Help menu.
